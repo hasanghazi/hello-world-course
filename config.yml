@@ -5,6 +5,7 @@ description: >-
 template:
   repo: hello-world-template
   name: hello-world
+  description: Just an intro
 before:
   - type: createIssue
     title: Welcome!
