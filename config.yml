@@ -1,0 +1,18 @@
+title: hello-world
+description: >-
+  I'm a new python developer looking to learn, grow and contribute to this
+  community
+template:
+  repo: hello-world-template
+  name: hello-world
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
